@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Build & Grow Group — Infrastructure Specialists</title>
+  <meta name="description" content="Build & Grow Group — Infrastructure specialists in Railway, Civil, and Road Projects across India. Quality-driven engineering and construction solutions for sustainable growth.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--accent:#0b6cf0;--dark:#0f1724;--muted:#6b7280;background:#ffffff;color:var(--dark)}
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial}
+    a{color:inherit;text-decoration:none}
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 28px;border-bottom:1px solid #eef2f7}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#06b6d4);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+    nav{display:flex;gap:18px;align-items:center}
+    .cta{background:var(--accent);color:white;padding:10px 14px;border-radius:8px;font-weight:600}
+
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;padding:48px 28px;align-items:center}
+    .hero h1{font-size:34px;margin:0 0 12px}
+    .hero p{color:var(--muted);margin:0 0 18px}
+
+    .about, .vision, .team{padding:40px 28px;background:#f8fafc}
+    .about h2,.vision h2,.team h2{margin-top:0}
+    .about p,.vision p,.team p{color:var(--muted);line-height:1.6;max-width:920px}
+
+    .team-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:18px}
+    .team-member{background:#fff;border-radius:12px;padding:20px;box-shadow:0 6px 18px rgba(15,23,36,0.04);text-align:center}
+    .team-member img{width:80px;height:80px;border-radius:50%;object-fit:cover;margin-bottom:12px}
+    .team-member h3{margin:0 0 6px;font-size:16px}
+    .team-member p{margin:0;color:var(--muted);font-size:14px}
+
+    .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;padding:28px}
+    .card{border-radius:12px;padding:20px;border:1px solid #eef2f7;background:#fff;box-shadow:0 6px 18px rgba(15,23,36,0.04)}
+    .card h3{margin:0 0 8px}
+    .card p{margin:0 0 12px;color:var(--muted)}
+
+    .projects{padding:0 28px 24px}
+    .projects-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .project-item{height:120px;border-radius:10px;background:#f8fafc;display:flex;align-items:flex-end;padding:10px;font-weight:600;color:var(--dark)}
+
+    .contact{padding:28px;border-top:1px solid #eef2f7}
+    form{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:920px}
+    form .full{grid-column:1/-1}
+    input,textarea,button{padding:10px;border-radius:8px;border:1px solid #e6eefb;font-size:14px}
+    textarea{min-height:120px;resize:vertical}
+    button{background:var(--accent);color:#fff;border:none;font-weight:600}
+
+    footer{padding:20px 28px;color:var(--muted);border-top:1px solid #eef2f7}
+
+    @media (max-width:920px){
+      .hero{grid-template-columns:1fr;gap:18px;padding:28px}
+      .cards{grid-template-columns:1fr;padding:18px}
+      .projects-grid{grid-template-columns:repeat(2,1fr)}
+      .team-grid{grid-template-columns:repeat(2,1fr)}
+      nav{display:none}
+    }
+    @media (max-width:560px){
+      .projects-grid{grid-template-columns:1fr}
+      .team-grid{grid-template-columns:1fr}
+      form{grid-template-columns:1fr}
+      header{padding:12px}
+      .hero{padding:18px}
+      .logo{width:40px;height:40px}
+      .hero h1{font-size:26px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo">B&G</div>
+      <div>
+        <div style="font-weight:700">Build & Grow Group</div>
+        <div style="font-size:12px;color:var(--muted)">Infrastructure Specialists — Railways • Civil • Roads</div>
+      </div>
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#vision">Vision & Mission</a>
+      <a href="#team">Leadership</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact" class="cta">Contact Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="about">
+      <div>
+        <p style="font-weight:600;color:var(--accent);margin:0 0 8px">Building India's Infrastructure Future</p>
+        <h1>Experts in Railway, Civil & Road Construction Projects</h1>
+        <p>Build & Grow Group delivers quality-driven infrastructure development with a focus on railway, civil, and road projects. We bring engineering excellence, innovation, and timely execution to every project we undertake.</p>
+      </div>
+
+      <aside style="background:#f8fafc;border-radius:12px;padding:18px">
+        <h3 style="margin-top:0">Quick Facts</h3>
+        <ul style="margin:8px 0 0;padding-left:18px;color:var(--muted)">
+          <li>Specialists in Railway, Civil & Road Infrastructure</li>
+          <li>10+ years of industry experience</li>
+          <li>Committed to sustainable and safe engineering</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="about" id="company">
+      <h2>About Build & Grow Group</h2>
+      <p>Founded with a vision to contribute to India’s infrastructure growth, <strong>Build & Grow Group</strong> has established itself as a trusted name in railway, civil, and road construction projects. With over a decade of experience, we combine technical expertise, advanced project management, and a passion for innovation to deliver top-quality results.</p>
+      <p>Our mission is to build sustainable and modern infrastructure that supports India's rapid urbanization and transportation development. We prioritize safety, quality, and timely delivery across all our projects while ensuring environmental responsibility and client satisfaction remain at the core of everything we do.</p>
+      <p>From large-scale railway systems to smart urban roads, we have successfully executed projects for both public and private sectors, reinforcing our commitment to nation-building through excellence in engineering.</p>
+    </section>
+
+    <section class="vision" id="vision">
+      <h2>Vision & Mission</h2>
+      <p><strong>Vision:</strong> To become India’s most trusted infrastructure partner by building sustainable, safe, and high-quality projects that contribute to national development.</p>
+      <p><strong>Mission:</strong> To deliver excellence in every project through innovation, teamwork, and a commitment to quality — ensuring timely completion and long-term value for our clients and communities.</p>
+    </section>
+
+    <section class="team" id="team">
+      <h2>Leadership / Management Team</h2>
+      <div class="team-grid">
+        <div class="team-member">
+          <img src="placeholder.jpg" alt="Anjali Reddy">
+          <h3>MD & Founder — Anjali Reddy</h3>
+          <p>Over 15 years of experience in infrastructure projects, specializing in railway and civil works. Visionary leader driving Build & Grow Group’s strategic growth.</p>
+        </div>
+        <div class="team-member">
+          <img src="placeholder.jpg" alt="Chief Engineer">
+          <h3>Chief Engineer — [Name]</h3>
+          <p>Expert in railway and road engineering, ensuring technical excellence and safety compliance across all projects.</p>
+        </div>
+        <div class="team-member">
+          <img src="placeholder.jpg" alt="Project Head">
+          <h3>Project Head — [Name]</h3>
+          <p>Oversees planning, execution, and timely delivery of projects with a focus on quality and client satisfaction.</p>
+        </div>
+        <div class="team-member">
+          <img src="placeholder.jpg" alt="Finance & Operations Head">
+          <h3>Finance & Operations Head — [Name]</h3>
+          <p>Manages financial planning, investment strategies, and operational efficiency for sustainable growth.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cards" id="services">
+      <div class="card">
+        <h3>Railway Infrastructure</h3>
+        <p>Expertise in railway construction and maintenance — including track laying, bridges, signaling, electrification, and station modernization projects across India.</p>
+      </div>
+
+      <div class="card">
+        <h3>Civil & Road Works</h3>
+        <p>From urban roads and drainage systems to large-scale civil infrastructure, we deliver durable, safe, and cost-effective solutions for government and private sectors.</p>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <h2 style="padding:0 28px">Key Projects</h2>
+      <div class="projects-grid" style="padding:12px 28px 0">
+        <div class="project-item">Railway Doubling Project — Belagavi, Karnataka</div>
+        <div class="project-item">Civil Works in Existing Railway Lines — Hubballi & Dharwad</div>
+        <div class="project-item">Rural Road Development Project — Solapur Village Areas</div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2 style="margin-top:0">Get in touch</h2>
+      <p style="color:var(--muted);margin-top:0">Contact us for collaborations or inquiries regarding railway, civil, or road infrastructure projects. We’ll respond within 2 business days.</p>
+
+      <form id="contactForm" onsubmit="return handleSubmit(event)">
+        <input type="text" id="name" name="name" placeholder="Full name" required>
+        <input type="email" id="email" name="email" placeholder="Email address" required>
+        <input type="tel" id="phone" name="phone" placeholder="Phone (optional)">
+        <select id="interest" name="interest" class="full" required>
+          <option value="">-- Select Project Type --</option>
+          <option>Railway Infrastructure</option>
+          <option>Civil Construction</option>
+          <option>Road Development</option>
+          <option>Other</option>
+        </select>
+        <textarea id="message" name="message" class="full" placeholder="Project details / inquiry" required></textarea>
+        <div class="full" style="display:flex;gap:12px;align-items:center">
+          <button type="submit">Send Message</button>
+          <div id="formStatus" style="color:var(--muted);font-size:14px"></div>
+        </div>
+      </form>
+
+      <div style="margin-top:18px;max-width:920px;color:var(--muted);font-size:14px">
+        <strong>Office:</strong> Chennai, India • <strong>Email:</strong> info@buildandgrow.example (replace with real email)
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Build & Grow Group — All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function handleSubmit(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const interest = document.getElementById('interest').value;
+      const message = document.getElementById('message').value.trim();
+      const status = document.getElementById('formStatus');
+
+      if(!name || !email || !interest || !message){
+        status.textContent = 'Please fill all required fields.';
+        return false;
+      }
+
+      const subj = encodeURIComponent('Inquiry: ' + interest + ' — ' + name);
+      const body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\nPhone: ' + phone + '\n\nMessage:\n' + message);
+      const mailto = 'mailto:info@buildandgrow.example?subject=' + subj + '&body=' + body;
+      window.location.href = mailto;
+      status.textContent = 'Opening your email client... If nothing happens, please email info@buildandgrow.example directly.';
+      return false;
+    }
+  </script>
+</body>
+</html>
